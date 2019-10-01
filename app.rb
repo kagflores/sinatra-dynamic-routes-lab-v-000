@@ -18,9 +18,10 @@ class App < Sinatra::Base
     @number = params[:number]
     @phrase = params[:phrase]
     @i = @number.to_i
-    while @i >= 1
+    if @i > 0
       "#{@phrase}"
-      @i = @i -1
+      @i = @i - 1
+    else
     end
   end
 

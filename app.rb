@@ -21,7 +21,6 @@ class App < Sinatra::Base
     while @i >= 1
       puts "#{@phrase}"
       @i = @i-1
-      binding.pry
     end
   end
 

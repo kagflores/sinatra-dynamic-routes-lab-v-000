@@ -41,14 +41,14 @@ class App < Sinatra::Base
     @number2 = params[:number2].to_i
 
     if @operation == 'add'
-      answer = @number1 + @number2
+      @answer = @number1 + @number2
     elsif @operation == 'subtract'
     elsif @operation == 'multiply'
     elsif @operation == 'divide'
     else
       "Sorry. Not applicable"
     end
-    answer
+    @answer
   end
 
 end

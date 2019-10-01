@@ -51,7 +51,6 @@ class App < Sinatra::Base
     else
       "Sorry. Not applicable"
     end
-    @answer
   end
 
 end
